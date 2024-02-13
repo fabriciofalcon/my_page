@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root {
+    --cor-primaria: #525FE1;
+    --cor-secundaria: #F86F03;
+    --cor-terciaria: #FFA41B;
+    --cor-quaternaria: #FFF6F4;
+    --cor-hover:#FFDD95;
+    --font-primaria: "PT+Serif", serif;
+    --font-secundaria: "Manrope", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+}
+
+.bordasup {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    border-top: 1px solid var(--cor-quaternaria);
+    border-bottom: 1px solid var(--cor-quaternaria);
+    padding: 1.875rem;
+    color: var(--cor-quaternaria);
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.cabecalho__alternativo {
+    padding: 5% 0% 5% 10%;
+}
+
+.cabecalho {
+    padding: 5% 0% 0% 10%;
+}
+
+.cabecalho__links {
+    display: flex;
+    gap: 67px;
+}
+
+.cabecalho__links__link {
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.875rem;
+    text-decoration: none;
+    color: var(--cor-quaternaria);
+    border: solid var(--cor-quaternaria);
+    border-radius: 10px;
+    background-color: var(--cor-secundaria);
+    padding: 5px;
+}
+
+.cabecalho__links__link:hover {
+    background-color: var(--cor-hover);
+}
+
+.apresentacao {
+    padding: 0% 10% 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__page {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+    width: 50%;
+}
+
+.apresentacao__page__titulo {
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    font-size: 3.125rem;
+    color: var(--cor-secundaria);
+
+}
+
+.apresentacao__page__paragrafos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+
+}
+
+.apresentacao__page__paragrafos__paragrafo {
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    font-size: 1.562rem;
+    text-align: justify;
+    color: var(--cor-terciaria);
+    line-height: 200%;
+}
+
+.apresentacao_imagem {
+    width: 50%;
+}
+
+.apresentacao__profissional__imagem {
+    width: 50%;
+}
+
+.apresentacao__profissional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+    width: 50%;
+}
+
+.apresentacao__profissional__rede {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+    width: auto;
+}
+
+.apresentacao__profissional__rede__redes {
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    font-size: 3.125rem;
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__profissional__rede__redes__sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.875rem;
+    width: 75%;
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.875rem;
+    text-decoration: none;
+    color: var(--cor-quaternaria);
+    border: solid var(--cor-quaternaria);
+    border-radius: 10px;
+    background-color: var(--cor-secundaria);
+    padding: 1.25rem;
+}
+
+.apresentacao__profissional__rede__redes__sociais:hover {
+    background-color: var(--cor-hover);
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+    color: var(--cor-quaternaria);
+    background-color: var(--cor-secundaria);
+    border-bottom: 1px solid var(--cor-quaternaria);
+    border-top: 1px solid var(--cor-quaternaria);
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 5%;
+    }
+
+    .cabecalho__alternativo {
+        padding: 5%;
+    }
+
+    .cabecalho__links {
+        flex-wrap: wrap;
+        gap: 30px 67px;
+        padding: 5%;
+        justify-content: center;
+        width: auto;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+    }
+
+    .apresentacao__page {
+        width: auto;
+        text-align: justify;
+    }
+
+    .apresentacao__page__titulo {
+        text-align: center;
+    }
+
+    .apresentacao__profissional {
+        width: auto;
+        text-align: justify;
+    }
+
+    .apresentacao__profissional__rede__redes {
+        text-align: center;
+    }
+
+    .apresentacao__imagem {
+        width: 100%;
+    }
+
+    .apresentacao__profissional__imagem {
+        width: 100%;
+    }
+
+    .rodape {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
